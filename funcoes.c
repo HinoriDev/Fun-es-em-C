@@ -17,12 +17,18 @@ int subtracao_positivo(int num_a, int num_b){
     return resultado;
 }
 
+void bom_dia(const char *nome){ //* simbolo magico nomeado como ponteio
+    printf("bom dia %s\n", nome);
+}
+
 int main() { //Função main, é o ponto de entrada da aplicação
     hello();
 
     printf("%d\n", soma(4, 5));
     printf("%d\n", subtracao_positivo(10, 5));
     printf("%d\n", subtracao_positivo(2, 4));
+
+    bom_dia("Marco");
 
     return 0;
 }
